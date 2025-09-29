@@ -4,6 +4,7 @@
 import pygame
 from constants import *
 from player import Player
+from asteroid import Asteroid
 
 updatable = pygame.sprite.Group()
 drawable = pygame.sprite.Group()
