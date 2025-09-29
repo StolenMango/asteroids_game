@@ -7,7 +7,9 @@ from player import Player
 
 updatable = pygame.sprite.Group()
 drawable = pygame.sprite.Group()
+asteroids = pygame.sprite.Group()
 Player.containers = (updatable, drawable)
+Asteroid.containers = (updatable, drawable, asteroids)
 
 def main():
     pygame.init()
