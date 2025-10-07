@@ -45,6 +45,12 @@ def main():
             if player.checkCollision(asteroid):
                 print("Game over!")
                 sys.exit()
+        for asteroid in asteroids:
+            for shot in shots:
+                if shot.checkCollision(asteroid):
+                    asteroid.kill()
+                    shot.kill()
+        # ---------------------------
         pygame.display.flip()
         clock.tick(60)
         dt = clock.get_time() / 1000  # in seconds
